@@ -16,7 +16,7 @@ function App() {
     return (
         <div className="App">
             <div className="info-block">
-                {!!users.length && <User users={users} onSelectUser={setUserPosts}/>}
+                {!!users.length && <User users={users} onSelectUser={setUsers}/>}
             </div>
             <div className="divider"/>
             <div className="post-block">
