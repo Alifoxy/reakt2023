@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { getUserPosts } from "../components/Users/GetInfo";
+import { getUserPosts } from "GetInfo";
 
 export const UserPosts = ({userId, onRemoveUserPosts}) => {
     const [user, setUserPosts] = useState(null);
