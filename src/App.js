@@ -1,9 +1,9 @@
 //import DescRMchar from "./components/Rick_&_Morty/character";
 // import DescSimp from './components/simpsons/simpson';
 import React, { useEffect, useState } from "react";
-import { User } from "./componets/Users/User";
-import { UserDets } from "./componets/Users/UserDets";
-import { GetInfo } from "./components/Users/GetInfo";
+import { User } from ".../componets/Users";
+import { UserDets } from ".../componets/Users";
+import { GetInfo } from ".../components/Users";
 
 function App() {
     const [users, setUsers] = useState([]);
