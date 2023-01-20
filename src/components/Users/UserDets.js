@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { getUserPosts } from "GetInfo";
+import { getUserPosts } from "./GetInfo";
 
 export const UserPosts = ({userId, onRemoveUserPosts}) => {
     const [user, setUserPosts] = useState(null);
@@ -13,7 +13,7 @@ export const UserPosts = ({userId, onRemoveUserPosts}) => {
     return (
         <div>
             UserPosts
-            <div>posts: {user.post}</div>
+            <div>posts: {setUserPosts(userId)}</div>
             <button onClick={() => onRemoveUserPosts(null)}>Clean up user posts</button>
         </div>
     );

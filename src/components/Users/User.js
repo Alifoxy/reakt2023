@@ -7,9 +7,8 @@ export const Users = ({users, onSelectUser}) => {
                 const {id: userId, name} = item;
                 return (
                     <div key={`${userId}-item`}>
-                        {userId}
-                        {name}
-                        <button onClick={() => onSelectUser(userId)}>Select user</button>
+                        {userId}--{name}
+                        <button onClick={() => onSelectUser(userId)}>Show user posts</button>
                     </div>
                 )
             })}
