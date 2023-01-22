@@ -9,7 +9,12 @@
 
 //-------------------------Homework2---------------------------
 //users project run
-import {App} from './components/users/RunApp';
+//import {App} from './components/users/RunApp';
+
+//spacex project run
+import {App} from './components/spacex/RunApp';
+//-------------------------------------------------------------
+
 
 
 export{App};
