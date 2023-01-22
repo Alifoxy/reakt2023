@@ -9,7 +9,7 @@
     border-color: darkmagenta;
 }
 .users_block{
-    background: #eaa8ea;
+    background: #f5bdf5;
     padding: 10px;
     border-radius: 20px;
 }
@@ -19,7 +19,7 @@
     padding: 10px;
     margin:0 0 10px 10px;
     border-radius: 20px;
-    background: #ea99ea;
+    background: #e0cfff;
 }
 .user_block {
     box-sizing: border-box;
