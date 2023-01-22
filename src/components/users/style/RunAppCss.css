@@ -1,4 +1,32 @@
 .main_block{
+    display: flex;
+    width: fit-content;
     background: mediumpurple;
     padding: 10px;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: darkmagenta;
+}
+.users_block{
+    background: #eaa8ea;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.post_block {
+    box-sizing: border-box;
+    padding: 10px;
+    margin:0 0 10px 10px;
+    border-radius: 20px;
+    background: #ea99ea;
+}
+.user_block {
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    border-width: 3px;
+    border-style: dashed;
+    border-color: darkmagenta;
 }
