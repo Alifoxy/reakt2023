@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
-import {Launches} from "./Launches";
-
+import {Users} from "./Users";
 
 export const App = () => {
-    const [setFlightId] = useState(null);
+    const [setUserId] = useState(null);
 
     return (
         <div>
             <div className={'main_block'}>
-                <div><Launches setFlightId={setFlightId}/></div>
+                <div><Users setUserId={setUserId}/></div>
             </div>
         </div>
             );
