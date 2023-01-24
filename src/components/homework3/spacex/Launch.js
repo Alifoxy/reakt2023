@@ -1,5 +1,5 @@
-import './style/RunAppCss.css';
-export const Launch = ({launch}) => {
+
+export const User = ({launch}) => {
     const {mission_name, launch_year} = launch;
     if (launch_year < 2020 || launch_year > 2020){
         return (
