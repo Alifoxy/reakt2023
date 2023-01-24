@@ -7,7 +7,6 @@ export const UsersForm = ({setUsers}) => {
         mode: 'all',
     })
 
-
     const submit = async (data) => {
         await getUsers(data).then(({data}) => setUsers((prevState) => [...prevState, data]))
         reset()
