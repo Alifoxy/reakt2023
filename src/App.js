@@ -1,15 +1,7 @@
-//-------------------------Homework1---------------------------
-//simpsons project run
-//import {App} from './components/homework1/simpsons/Simpsons';
 
-//rick & morty project run
-//import {App} from './components/homework1/rick_&_morty/Characters';
-//-------------------------------------------------------------
-
-
-//-------------------------Homework2---------------------------
+//-------------------------Homework3---------------------------
 //users project run
-import {App} from './components/homework2/users/RunApp';
+import {App} from './components/homework3/userform/RunApp';
 
 //spacex project run
 //import {App} from './components/homework2/spacex/RunApp';
