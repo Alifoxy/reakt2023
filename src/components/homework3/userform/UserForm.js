@@ -3,13 +3,13 @@ import { useForm } from "react-hook-form";
 import { getUsers } from "./api/GetInfo";
 
 export const UsersForm = ({setUsers}) => {
-    const { register, handleSubmit, reset, formState: {errors, isValid}} = useForm({
+    const { register, handleSubmit, reset} = useForm({
         mode: 'all',
     })
 
 
     const submit = async (data) => {
-        await getUsers().then(({data}) => setUsers((prevState) => [...prevState, data]))
+        await getUsers(data).then(({data}) => setUsers((prevState) => [...prevState, data]))
         reset()
     }
 
