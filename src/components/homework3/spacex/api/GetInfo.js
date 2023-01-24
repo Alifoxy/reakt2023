@@ -1,3 +1,3 @@
 export const getLaunchesData = () => {
-    return fetch('https://api.spacexdata.com/v3/launches/').then(resp => resp.json());
+    return fetch('http://jsonplaceholder.typicode.com/users').then(resp => resp.json());
 }
