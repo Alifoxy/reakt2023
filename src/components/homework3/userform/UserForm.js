@@ -1,9 +1,11 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
-import { getUsers } from "./api/GetInfo";
+import { getUsers } from "../../../api/GetInfo";
+import {joiResolver} from "@hookform/resolvers/joi";
+import {userValidator} from "../../../validators/userValidator";
 
 export const UsersForm = ({setUsers}) => {
-    const { register, handleSubmit, reset, formState:{errors,isValid},setValue} = useForm({mode: 'all',})
+    const { register, handleSubmit, reset, formState:{errors,isValid},setValue} = useForm({mode: 'all',resolver:joiResolver(userValidator)});
 
     const submit = async (data) => {
         await getUsers()
@@ -12,9 +14,8 @@ export const UsersForm = ({setUsers}) => {
 
     return (
         <form onSubmit={handleSubmit(submit)}>
-            <input type="text" placeholder="username" {...register('username',{pattern:{value:/^[a-zA-Zа-яА-яёЁіІїЇ]{1,20}$/,
-                    message:'username can only contain letters and have 1 to 20 symbols'}})}/>
-            {errors.brand&&<span>{errors.brand.message}</span>}
+            <input type="text" placeholder="username" {...register('username')}/>
+            {errors.username&&<span>{errors.username.message}</span>}
             <button>Create new user</button>
         </form>
     );
