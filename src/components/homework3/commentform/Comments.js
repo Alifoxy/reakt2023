@@ -5,8 +5,8 @@ export const Comments = ({comments}) => {
     return (
         <div>
             <h1>Comments</h1>
-            {comments.map(user => {
-                const {id, name} = user;
+            {comments.map(item => {
+                const {id, name} = item;
                 return (
                     <div key={id}>
                         <div>id:{id}</div>

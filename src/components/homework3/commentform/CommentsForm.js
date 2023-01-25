@@ -2,11 +2,11 @@ import React from 'react';
 import { useForm } from "react-hook-form";
 import { getComments } from "../../../api/getInfo/getCommentsInfo";
 import {joiResolver} from "@hookform/resolvers/joi";
-import {userValidator} from "../../../validators/userValidator";
+import {commentsValidator} from "../../../validators/commentsValidator";
 
 
 export const CommentsForm = ({setComments}) => {
-    const { register, handleSubmit, reset, formState:{errors,isValid}} = useForm({mode: 'all',resolver:joiResolver(userValidator)});
+    const { register, handleSubmit, reset, formState:{errors,isValid}} = useForm({mode: 'all',resolver:joiResolver(commentsValidator)});
 
         const submit = async (data) => {
             await getComments.addComment(data).then(({data}) => setComments((prevState) => [...prevState, data]))
