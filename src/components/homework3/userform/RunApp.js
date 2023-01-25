@@ -2,7 +2,7 @@ import React from 'react';
 import { useEffect, useState } from "react";
 import {UsersForm} from "./UserForm";
 import {Users} from "./Users";
-import {getUsers} from "../../../api/getInfo/getInfo";
+import {getUsers} from "../../../api/getInfo/getUsersInfo";
 
 export const App = () => {
     const [users, setUsers] = useState([]);
