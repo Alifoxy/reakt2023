@@ -4,6 +4,7 @@ import { getUsers } from "../../../api/getInfo";
 import {joiResolver} from "@hookform/resolvers/joi";
 import {userValidator} from "../../../validators/userValidator";
 
+
 export const UsersForm = ({setUsers}) => {
     const { register, handleSubmit, reset, formState:{errors,isValid}} = useForm({mode: 'all',resolver:joiResolver(userValidator)});
 

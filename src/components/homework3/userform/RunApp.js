@@ -1,6 +1,7 @@
-import {Users} from "./Users";
+import React from 'react';
 import { useEffect, useState } from "react";
 import {UsersForm} from "./UserForm";
+import {Users} from "./Users";
 import {getUsers} from "../../../api/getInfo";
 
 export const App = () => {
