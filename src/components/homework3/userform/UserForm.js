@@ -10,7 +10,7 @@ export const UsersForm = ({setUsers}) => {
 
         const submit = async (data) => {
             await getUsers.createUser(data).then(({data}) => setUsers((prevState) => [...prevState, data]))
-            reset()
+            reset(data)
         }
 
 
