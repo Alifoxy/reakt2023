@@ -8,7 +8,7 @@ export const UsersForm = ({setUsers}) => {
     const { register, handleSubmit, reset, formState:{errors,isValid}} = useForm({mode: 'all',resolver:joiResolver(userValidator)});
 
     const submit = async (user) => {
-        const {data} = await getUsers.create(user);
+        const {data} = await getUsers.createUser(user);
         setUsers(prev=>[...prev,data])
         reset()
     }

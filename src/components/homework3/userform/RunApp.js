@@ -7,7 +7,7 @@ export const App = () => {
     const [users, setUsers] = useState([]);
 
     useEffect(() => {
-        getUsers().then(resp => setUsers(resp));
+        getUsers.getAll().then(({data}) => setUsers([...data]))
     }, []);
 
     return (
