@@ -9,7 +9,7 @@ export const App = () => {
     console.log(state);
 
      useEffect(() => {
-         getUsers().then(({data}) => setUsers([...data]))
+         getUsers().then(resp => setUsers(resp));
      }, [])
 
     return (
@@ -20,7 +20,7 @@ export const App = () => {
             <hr/>
             <Users users={users}/>
 
-            <div style={{ marginTop: 300 }}>
+            <div>
                 <button onClick={() => setState((prevState) => [...prevState, 5, 6, 7, 8, 9, 10])}>Add state</button>
             </div>
             </div>
