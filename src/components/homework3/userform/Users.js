@@ -11,7 +11,7 @@ export const Users = ({users}) => {
                 return (
                     <div key={id}>
                         <div>id:{id}</div>
-                        <div>name:{username}</div>
+                        <div>username:{username}</div>
                     </div>
                 )
             })}
