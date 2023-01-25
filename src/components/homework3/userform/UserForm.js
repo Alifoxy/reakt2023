@@ -8,11 +8,10 @@ import {userValidator} from "../../../validators/userValidator";
 export const UsersForm = ({setUsers}) => {
     const { register, handleSubmit, reset, formState:{errors,isValid}} = useForm({mode: 'all',resolver:joiResolver(userValidator)});
 
-    const submit =async (data) => {
-        await getUsers.createUser(data);
-        setUsers(prev => [...prev, data])
-        reset()
-    }
+        const submit = async (data) => {
+            await getUsers.createUser(data).then(({data}) => setUsers((prevState) => [...prevState, data]))
+            reset()
+        }
 
 
     return (
