@@ -1,11 +1,26 @@
-import {User} from "./User";
+import React from 'react';
+// import {User} from "./User";
+// import { getUsers } from "../../../api/getInfo";
 
 export const Users = ({users}) => {
 
     return (
-        <div className={'users_block'}>
-            {users.map(user => <User key={user.id} user={user}/>)}
+        <div>
+            {users.map(item => {
+                const {id, username} = item;
+                return (
+                    <div key={id}>
+                        {id} --- {username}
+                    </div>
+                )
+            })}
         </div>
     );
+
+    // return (
+    //     <div className={'users_block'}>
+    //         {users.map(user => <User key={user.id} user={user}/>)}
+    //     </div>
+    // );
 }
 
