@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect, useState } from "react";
-import {UsersForm} from "./UserForm";
-import {Comments} from "./Users";
+import {CommentsForm} from "./CommentsForm";
+import {Comments} from "./Comments";
 import {getComments} from "../../../api/getInfo/getCommentsInfo";
 
 export const App = () => {
@@ -14,7 +14,7 @@ export const App = () => {
     return (
         <div>
             <div className={'main_block'}>
-            <UsersForm setComments={setComments}/>
+            <CommentsForm setComments={setComments}/>
             <hr/>
             <Comments comments={comments}/>
             </div>

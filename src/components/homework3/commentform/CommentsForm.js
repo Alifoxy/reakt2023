@@ -5,7 +5,7 @@ import {joiResolver} from "@hookform/resolvers/joi";
 import {userValidator} from "../../../validators/userValidator";
 
 
-export const UsersForm = ({setComments}) => {
+export const CommentsForm = ({setComments}) => {
     const { register, handleSubmit, reset, formState:{errors,isValid}} = useForm({mode: 'all',resolver:joiResolver(userValidator)});
 
         const submit = async (data) => {
