@@ -16,10 +16,6 @@ export const App = () => {
             <UsersForm setUsers={setUsers}/>
             <hr/>
             <Users users={users}/>
-
-            <div>
-                <button onClick={() => setState((prevState) => [...prevState, 5, 6, 7, 8, 9, 10])}>Add state</button>
-            </div>
             </div>
         </div>
     );
