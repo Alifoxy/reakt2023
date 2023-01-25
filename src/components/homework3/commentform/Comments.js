@@ -1,19 +1,21 @@
-import React, { useEffect, useState } from 'react';
-import {getComments} from "./api/GetInfo";
-import {Comment} from "./Comment";
+import React from 'react';
 
-
-export const Comments = () => {
-    const [comments, setComments] = useState([]);
-
-    useEffect(() => {
-        getComments().then(resp => setComments(resp));
-    }, []);
+export const Comments = ({comments}) => {
 
     return (
-        <div className={'comments_block'}>
-            {comments.map(comment => <Comment key={comment.id} comment={comment}/>)}
+        <div>
+            <h1>Comments</h1>
+            {comments.map(user => {
+                const {id, name} = user;
+                return (
+                    <div key={id}>
+                        <div>id:{id}</div>
+                        <div>name:{name}</div>
+                    </div>
+                )
+            })}
         </div>
     );
+
 }
 
