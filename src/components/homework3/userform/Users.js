@@ -7,7 +7,7 @@ export const Users = ({users}) => {
             {users.map(user => {
                 const {id, username} = user;
                 return (
-                    <div key={id}>
+                    <div key={user.id}>
                         <div>id:{id}</div>
                         <div>username:{username}</div>
                     </div>
