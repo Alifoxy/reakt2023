@@ -9,7 +9,7 @@ export const App = () => {
 
     useEffect(() => {
         getUsers.getAll().then(({data}) => setUsers([...data]))
-    }, [users.id]);
+    }, []);
 
     return (
         <div>
