@@ -10,7 +10,7 @@ export const UsersForm = ({setUsers}) => {
 
     const submit = async (user) => {
         await getUsers.createUser(user);
-        setUsers(prev=>[...prev, user])
+        setUsers(prev => [...prev, user])
         reset()
     }
 
