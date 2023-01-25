@@ -1,6 +1,4 @@
 import React from 'react';
-// import {User} from "./User";
-// import { getUsers } from "../../../api/getInfo";
 
 export const Users = ({users}) => {
 
@@ -18,10 +16,5 @@ export const Users = ({users}) => {
         </div>
     );
 
-    // return (
-    //     <div className={'users_block'}>
-    //         {users.map(user => <User key={user.id} user={user}/>)}
-    //     </div>
-    // );
 }
 
