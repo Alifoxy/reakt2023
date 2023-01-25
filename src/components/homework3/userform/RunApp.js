@@ -5,17 +5,14 @@ import {getUsers} from "../../../api/GetInfo";
 
 export const App = () => {
     const [users, setUsers] = useState([]);
-    const [state, setState] = useState([1, 2 ,3 ,4]);
-    console.log(state);
 
-     useEffect(() => {
-         getUsers().then(resp => setUsers(resp));
-     }, [])
+    useEffect(() => {
+        getUsers().then(resp => setUsers(resp));
+    }, []);
 
     return (
         <div>
             <div className={'main_block'}>
-
             <UsersForm setUsers={setUsers}/>
             <hr/>
             <Users users={users}/>

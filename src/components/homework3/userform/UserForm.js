@@ -5,10 +5,12 @@ import {joiResolver} from "@hookform/resolvers/joi";
 import {userValidator} from "../../../validators/userValidator";
 
 export const UsersForm = ({setUsers}) => {
-    const { register, handleSubmit, reset, formState:{errors,isValid},setValue} = useForm({mode: 'all',resolver:joiResolver(userValidator)});
+    const { register, handleSubmit, reset, formState:{errors,isValid}} = useForm({mode: 'all',resolver:joiResolver(userValidator)});
 
-    const submit = async (data) => {
-        await getUsers()
+    const submit = async (user) => {
+        const {data} = await getUsers.create(user);
+        setUsers(prev=>[...prev,data])
+        reset()
     }
 
 
@@ -16,7 +18,7 @@ export const UsersForm = ({setUsers}) => {
         <form onSubmit={handleSubmit(submit)}>
             <input type="text" placeholder="username" {...register('username')}/>
             {errors.username&&<span>{errors.username.message}</span>}
-            <button>Create new user</button>
+            <button disabled={!isValid}>Create new user</button>
         </form>
     );
 };
