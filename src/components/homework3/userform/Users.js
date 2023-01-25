@@ -4,8 +4,8 @@ export const Users = ({users}) => {
 
     return (
         <div>
-            {users.map(item => {
-                const {id, username} = item;
+            {users.map(user => {
+                const {id, username} = user;
                 return (
                     <div key={id}>
                         <div>id:{id}</div>
