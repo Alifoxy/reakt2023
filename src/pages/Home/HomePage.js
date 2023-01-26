@@ -1,10 +1,12 @@
 import React from 'react';
+import Home from "../../components/Home/Home";
+import '../name_style.css';
 
 const HomePage = () => {
     return (
         <div>
-            <h2>Home</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis culpa, debitis dolorem est harum id impedit itaque iusto labore odio, quidem ratione sit soluta sunt totam veritatis voluptatibus. Eius, voluptates!</p>
+            <h2 className={'name_of_page'}>Home</h2>
+            <Home/>
         </div>
     );
 };

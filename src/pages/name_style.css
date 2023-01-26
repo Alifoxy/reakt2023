@@ -1,0 +1,10 @@
+
+.name_of_page{
+    background-color: silver;
+    color: darkmagenta;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 20px;
+    font-family: 'Cooper Black',sans-serif;
+    font-size: xx-large;
+}

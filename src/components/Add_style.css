@@ -1,0 +1,43 @@
+.txt{
+    text-align: justify;
+    background-color: mediumpurple;
+    color: gold;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 20px;
+    font-family: 'Courgette',sans-serif;
+    font-size: x-large;
+}
+
+.item1{
+    text-align:center;
+    background-color: purple;
+    color: gold;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 20px;
+    font-family: 'Courgette',sans-serif;
+    font-size: x-large;
+}
+
+.item2{
+    text-align:center;
+    background-color: rebeccapurple;
+    color: gold;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 20px;
+    font-family: 'Courgette',sans-serif;
+    font-size: x-large;
+}
+
+.item3{
+    text-align:center;
+    background-color: darkorchid;
+    color: gold;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 20px;
+    font-family: 'Courgette',sans-serif;
+    font-size: x-large;
+}
