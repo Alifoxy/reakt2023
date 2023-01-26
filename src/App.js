@@ -5,6 +5,7 @@ import AlbumsPage from "./pages/Albums/AlbumsPage";
 import TodosPage from "./pages/Todos/TodosPage";
 import CommentsPage from "./pages/Comments/CommentsPage";
 import MainLayout from "./layouts/MainLayout";
+import NotFoundPage from "./pages/NotFound/NotFoundPage";
 
 const App = () => {
     return (
@@ -16,6 +17,7 @@ const App = () => {
                 <Route path={'todos'} element={<TodosPage/>}/>
                 <Route path={'comments'} element={<CommentsPage/>}/>
             </Route>
+            <Route path={'*'} element={<NotFoundPage/>}/>
         </Routes>
         </div>
     );

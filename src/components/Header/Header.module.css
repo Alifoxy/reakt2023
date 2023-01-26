@@ -9,11 +9,9 @@
     border-style: dotted;
 }
 .Header a{
-    color: ghostwhite;
     font-size: xx-large;
-    font-family: "Harlow Solid Italic", sans-serif;
+    font-family: "Cooper Black",sans-serif;
+    color: whitesmoke;
     text-decoration: none;
 }
-.Header a.hover{
-    color: red;
-}
+
