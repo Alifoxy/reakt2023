@@ -2,7 +2,7 @@ import React from 'react';
 import { useEffect, useState } from "react";
 import {CommentsForm} from "./CommentsForm";
 import {Comments} from "./Comments";
-import {getComments} from "../../../api/getInfo/getCommentsInfo";
+import {getComments} from "../../../services/api/getInfo/getCommentsInfo";
 
 export const App = () => {
     const [comments, setComments] = useState([]);

@@ -1,0 +1,10 @@
+.Header{
+    display: flex;
+    height: 60px;
+    background-color: hotpink;
+    justify-content: space-around;
+    align-items: center;
+    color: ghostwhite;
+    font-size: xx-large;
+    font-family: "Copperplate Gothic Bold", sans-serif;
+}

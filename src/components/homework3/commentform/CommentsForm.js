@@ -1,6 +1,6 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
-import { getComments } from "../../../api/getInfo/getCommentsInfo";
+import { getComments } from "../../../services/api/getInfo/getCommentsInfo";
 import {joiResolver} from "@hookform/resolvers/joi";
 import {commentsValidator} from "../../../validators/commentsValidator";
 
