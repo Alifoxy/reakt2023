@@ -4,17 +4,18 @@ import HomePage from "./pages/Home/HomePage";
 import AlbumsPage from "./pages/Albums/AlbumsPage";
 import TodosPage from "./pages/Todos/TodosPage";
 import CommentsPage from "./pages/Comments/CommentsPage";
-import Header from "./components/Header/Header";
+import MainLayout from "./layouts/MainLayout";
 
 const App = () => {
     return (
         <div>
-            <Header/>
         <Routes>
-            <Route path={'/'} element={<HomePage/>}/>
-            <Route path={'albums'} element={<AlbumsPage/>}/>
-            <Route path={'todos'} element={<TodosPage/>}/>
-            <Route path={'comments'} element={<CommentsPage/>}/>
+            <Route path={'/'} element={<MainLayout/>}>
+                <Route path={'/'} element={<HomePage/>}/>
+                <Route path={'albums'} element={<AlbumsPage/>}/>
+                <Route path={'todos'} element={<TodosPage/>}/>
+                <Route path={'comments'} element={<CommentsPage/>}/>
+            </Route>
         </Routes>
         </div>
     );

@@ -4,7 +4,13 @@
     background-color: hotpink;
     justify-content: space-around;
     align-items: center;
+}
+.Header a{
     color: ghostwhite;
     font-size: xx-large;
     font-family: "Copperplate Gothic Bold", sans-serif;
+    text-decoration: none;
+}
+.Header a[class='active']{
+    color: indigo;
 }

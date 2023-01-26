@@ -6,9 +6,9 @@ const Header = () => {
     return (
         <div className={css.Header}>
             <Link to={'/'}>Home</Link>
-            <Link to={'albums'}>Home</Link>
-            <Link to={'comments'}>Home</Link>
-            <Link to={'todos'}>Home</Link>
+            <Link to={'albums'}>Albums</Link>
+            <Link to={'comments'}>Comments</Link>
+            <Link to={'todos'}>Todos</Link>
 
         </div>
     );
