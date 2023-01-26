@@ -9,7 +9,6 @@ const Header = () => {
             <Link to={'albums'}>Albums</Link>
             <Link to={'comments'}>Comments</Link>
             <Link to={'todos'}>Todos</Link>
-
         </div>
     );
 };
